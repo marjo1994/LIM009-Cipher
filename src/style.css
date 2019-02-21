@@ -1,1 +1,35 @@
-/* Acá va tu código */
+.containerbig{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:brown;
+    }
+    
+    .container {
+    width: 300px;
+    height: 600px;
+    background-color: burlywood;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: brown;
+    }
+    
+    button {
+    background-color: burlywood;
+    color: brown;
+    font-weight: bold;
+    }
+    
+    .containerbig2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:brown;
+    }
+    
+    #claves {
+    display: none;
+    }

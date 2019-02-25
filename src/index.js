@@ -1,6 +1,6 @@
 // Función para guardar clave 
 document.getElementById("btnS").addEventListener("click",save);
-function save () {
+function save() {
 const name = document.getElementById("name").value;
 document.getElementById("saludo").innerHTML=`Hola ${name} , tu clave elegida es`;
 let key = document.getElementById("key").value;
@@ -30,4 +30,12 @@ document.getElementById("inicio").style.display="none";
 document.getElementById("claves").style.display="none";
 document.getElementById("clave-enc").style.display="none";
 document.getElementById("clave-dec").style.display="block";
+}
+
+
+//Función para refrescar la página
+
+document.getElementById("btnRefresh").addEventListener("click",refresh);
+function refresh() {
+    location.reload();
 }

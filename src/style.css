@@ -1,4 +1,7 @@
-.containerbig{
+    body {
+    font-family: Georgia, Serif;
+    }
+    .containerbig{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,6 +24,10 @@
     background-color: burlywood;
     color: brown;
     font-weight: bold;
+    border-radius: 9px;
+    width: 
+    
+
     }
     
     .containerbig2 {
@@ -30,6 +37,10 @@
     background-color:brown;
     }
     
-    #claves {
+    #claves,#clave-enc,#clave-dec {
     display: none;
+    }
+
+    .title {
+    margin-bottom: 60px;
     }

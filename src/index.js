@@ -15,6 +15,9 @@ function enc() {
 const key2 = document.getElementById("key2").textContent;
 const number = parseInt(document.getElementById("number").value);
 cipher.encode(number,key2);
+document.getElementById("inicio").style.display="none";
+document.getElementById("claves").style.display="none";
+document.getElementById("clave-enc").style.display="block";
 }
 
 //Función para devolver clave desencriptada
@@ -23,4 +26,8 @@ function des() {
 const encodeKey = document.getElementById("encode-key").textContent;
 const number = parseInt(document.getElementById("number").value);
 cipher.decode(number,encodeKey);
+document.getElementById("inicio").style.display="none";
+document.getElementById("claves").style.display="none";
+document.getElementById("clave-enc").style.display="none";
+document.getElementById("clave-dec").style.display="block";
 }

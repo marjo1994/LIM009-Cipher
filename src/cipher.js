@@ -1,7 +1,7 @@
 const decodeKey = document.getElementById("decode-key");
 const encodeKey = document.getElementById("encode-key");
 const key2 = document.getElementById("key2");
-const number = 10;
+const number = parseInt(document.getElementById("number").value);
 
 window.cipher = {
   encode: (number,key2) => {
@@ -11,7 +11,7 @@ window.cipher = {
     },
   decode: (number,encodeKey) => {
     for (let i = 0; i< encodeKey.length; i++) {
-      decodeKey.innerHTML += String.fromCharCode(((encodeKey.charCodeAt(i)-65-number)%26)+65);
+      decodeKey.innerHTML += String.fromCharCode(((encodeKey.charCodeAt(i)-90-number)%26)+90);
    }
   }
 };

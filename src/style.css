@@ -1,6 +1,9 @@
-    body {
-    font-family: Georgia, Serif;
+    @import url('https://fonts.googleapis.com/css?family=Zilla+Slab');
+
+    body{
+    font-family: 'Zilla Slab', serif;
     }
+
     .containerbig{
     display: flex;
     align-items: center;
@@ -18,6 +21,8 @@
     flex-direction: column;
     text-align: center;
     color: brown;
+    margin-top: 10px;
+    margin-bottom: 10px;
     }
     
     button {
@@ -43,4 +48,6 @@
 
     .title {
     margin-bottom: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
     }

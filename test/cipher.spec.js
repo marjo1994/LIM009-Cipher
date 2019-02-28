@@ -22,6 +22,12 @@ describe('cipher', () => {
     it('debería retornar "0123456789" para "3456789012" con offset 33', ()=> {
       assert.equal(cipher.encode(33,"0123456789"),"3456789012");
     });
+
+    it('debería retornar simb2 para simb con offset 33', ()=> {
+      const simb= '!' + '#$%&"()*+,-./';
+      const simb2= '$'+ "&'()%+,-./!" + '"#';
+      assert.equal(cipher.encode(33,simb),simb2);
+    });
   
 });
 
@@ -41,6 +47,12 @@ describe('cipher', () => {
 
     it('debería retornar "0123456789" para "3456789012" con offset 33', ()=> {
       assert.equal(cipher.decode(33,"3456789012"),"0123456789");
+    });
+
+    it('debería retornar simb para simb2 con offset 33', ()=> {
+      const simb= '!' + '#$%&"()*+,-./';
+      const simb2= '$'+ "&'()%+,-./!" + '"#';
+      assert.equal(cipher.decode(33,simb2),simb);
     });
 
   });

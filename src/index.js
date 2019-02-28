@@ -34,7 +34,6 @@ document.getElementById("clave-dec").style.display="block";
 
 //Función para refrescar la página
 
-document.getElementById("btnRefresh").addEventListener("click",refresh);
-function refresh() {
-    location.reload();
-}
+document.getElementById("btnRefresh").addEventListener("click",()=>{
+location.reload();   
+});

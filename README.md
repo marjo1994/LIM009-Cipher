@@ -13,8 +13,8 @@ Se han adquirido unos candados sincronizados con el producto digital que se abre
 El usuario registra su usuario y clave que permite letras mayúsculas, minúsculas, números y algunos símbolos.
 Por consiguiente, da la bienvenida al usuario y muestra la clave elegida. Primero, te da la opción de encriptar la clave para abrir el locker.Con la clave encriptada tienes la opción de desencriptar la clave para cerrar el locker. Finalmente, te da la opción de volver al inicio para asignar una nueva clave o apoyar a una compañera con el registro de su clave.
 
-![Registro](img\pantalla1.jpg)
-![Bienvenida](img\pantalla2.jpg)
-![Encriptado](img\pantalla3.jpg)
-![Desencriptado](img\pantalla4.jpg)
+![Registro](img/pantalla1.jpg)
+![Bienvenida](img/pantalla2.jpg)
+![Encriptado](img/pantalla3.jpg)
+![Desencriptado](img/pantalla4.jpg)
 

@@ -1,26 +1,31 @@
-const decodeKey = document.getElementById("decode-key");
-const encodeKey = document.getElementById("encode-key");
-const key2 = document.getElementById("key2");
-const number = parseInt(document.getElementById("number").value);
-
 window.cipher = {
-  encode: (number,key2) => {
-    for (let i = 0; i< key2.length; i++) {
-      if(65<=key2.charCodeAt(i) && key2.charCodeAt(i)<=90) {
-        encodeKey.innerHTML += String.fromCharCode(((key2.charCodeAt(i)-65+number)%26)+65);
-      } else if(97<=key2.charCodeAt(i) && key2.charCodeAt(i)<=122) {
-        encodeKey.innerHTML += String.fromCharCode(((key2.charCodeAt(i)-97+number)%26)+97);
+  encode: (offset,string) => {
+    let textenc = '';
+    for (let i = 0; i< string.length; i++) {
+      if(65<=string.charCodeAt(i) && string.charCodeAt(i)<=90) {
+        textenc += String.fromCharCode((string.charCodeAt(i)-65+offset)%26+65);
+      } else if(97<=string.charCodeAt(i) && string.charCodeAt(i)<=122) {
+        textenc += String.fromCharCode((string.charCodeAt(i)-97+offset)%26+97);
+      } else if(33<=string.charCodeAt(i) && string.charCodeAt(i)<=47) {
+        textenc += String.fromCharCode((string.charCodeAt(i)-33+offset)%15+33);
+      } else if(48<=string.charCodeAt(i) && string.charCodeAt(i)<=57) {
+        textenc += String.fromCharCode((string.charCodeAt(i)-48+offset)%10+48);
       }
-    }
+     } return textenc;
   },
-  decode: (number,encodeKey) => {
-    for (let i = 0; i< encodeKey.length; i++) {
-      if(65<=encodeKey.charCodeAt(i) && encodeKey.charCodeAt(i)<=90) {
-        decodeKey.innerHTML += String.fromCharCode(((encodeKey.charCodeAt(i)-90-number)%26)+90); 
-      } else if(97<=encodeKey.charCodeAt(i) && encodeKey.charCodeAt(i)<=122) {
-        decodeKey.innerHTML += String.fromCharCode(((encodeKey.charCodeAt(i)-122-number)%26)+122);
+  decode: (offset,string) => {
+    let textdec = '';
+    for (let i = 0; i< string.length; i++) {
+      if(65<=string.charCodeAt(i) && string.charCodeAt(i)<=90) {
+        textdec += String.fromCharCode((string.charCodeAt(i)-90-offset)%26+90); 
+      } else if(97<=string.charCodeAt(i) && string.charCodeAt(i)<=122) {
+        textdec += String.fromCharCode((string.charCodeAt(i)-122-offset)%26+122);
+      } else if(33<=string.charCodeAt(i) && string.charCodeAt(i)<=47) {
+        textdec += String.fromCharCode((string.charCodeAt(i)-47-offset)%15+47);
+      } else if(48<=string.charCodeAt(i) && string.charCodeAt(i)<=57) {
+        textdec +=  String.fromCharCode((string.charCodeAt(i)-57-offset)%10+57);
       }
-    }
+    } return textdec;
   }
 };
 

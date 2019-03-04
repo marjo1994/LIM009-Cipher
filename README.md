@@ -21,8 +21,8 @@ Primero, te da la opción de encriptar la clave para abrir el locker.
 
 ![Encriptado](img/pantalla3.jpg)
 
-Con la clave encriptada tienes la opción de desencriptar la clave para cerrar el locker.
+Con la clave encriptada tienes la opción de desencriptar la clave para cerrar el locker.Finalmente, te da la opción de volver al inicio para asignar una nueva clave o apoyar a una compañera con el registro de su clave.
 
 ![Desencriptado](img/pantalla4.jpg)
 
-Finalmente, te da la opción de volver al inicio para asignar una nueva clave o apoyar a una compañera con el registro de su clave.
+El método que se utiliza para encriptar y desencriptar la clave es llamado "Cifrado Cesar" utiliza el cifrado por desplazamiento ya que toma cada caracter de la clave y lo desplaza la cantidad de caracteres ingresado en la caja "offset" ya sea hacia adelante para encriptar o hacia atrás para desencriptar y finalmente, es sustituido por el nuevo carácter. 

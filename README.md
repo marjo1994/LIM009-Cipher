@@ -6,7 +6,7 @@ Se ha desarrollado un producto digital para las estudiantes de Laboratoria, el c
 
 ## ¿Cuáles son los objetivos de estos usuarios en relación con tu producto?
 
-Se han adquirido unos candados sincronizados con el producto digital que se abren cuando se registra la clave encriptada y se cierran con la clave desencriptada con el objetivo de mantener la seguridad de los bienes almacenados en el locker.
+El objetivo es mantener la seguridad de los bienes almacenados en el locker. Adquirir aparatos electrónicos que funcionen como candados que están sincronizados con el producto digital, se abrirán cuando se registre la clave encriptada y se cerrarán con la clave desencriptada.
 
 ## ¿Cómo crees que el producto que estás creando está resolviendo sus problemas?
 

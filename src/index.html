@@ -8,6 +8,7 @@
   <body>
   <!--Sección inicio-->
     <div class="containerbig" id="inicio">
+    <div class="containerbig2">
       <div class="container">
         <h1 class="title">Asigna una clave segura a tu locker</h1>
         <form>
@@ -15,13 +16,14 @@
           <input type="text" id="name" placeholder="Ingresa tu nombre"/>
           <br><br>
           <label for="key">Clave</label>
-          <input type="text" id="key" placeholder="Admite solo letras mayúsculas"/>
+          <input type="text" id="key" placeholder="Ingresa tu clave"/>
           <br><br>
           <input id="number" type="number" min="1" step="1" placeholder="N° de desplazamientos">
         </form>
         <br>
-        <button type="button" id="btnS">Guardar</button>
+        <button type="button" id="btnS">Registrar</button>
       </div>
+    </div>
     </div>
 <!--Sección Bienvenida-->
     <div class="containerbig" id="claves">
@@ -37,6 +39,7 @@
     <div class="containerbig" id="clave-enc">
       <div class="containerbig2">
         <div class="container">
+          <p>Abre tu locker</p>
           <h1 id="encode-key"></h1>
           <button type="button" id="btnDes">Descifrar</button>          
         </div>
@@ -46,6 +49,7 @@
     <div class="containerbig" id="clave-dec">
       <div class="containerbig2">
         <div class="container">
+          <p>No olvides cerrarlo</p>
           <h1 id="decode-key"></h1>
           <button type="button" id="btnRefresh">Volver al inicio</button>
         </div>

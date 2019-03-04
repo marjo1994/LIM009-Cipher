@@ -1,47 +1,60 @@
     @import url('https://fonts.googleapis.com/css?family=Zilla+Slab');
     @import url('https://fonts.googleapis.com/css?family=Noto+Serif+TC');
-
+    @import url('https://fonts.googleapis.com/css?family=Carter+One');
+        
     body{
-    font-family: 'Zilla Slab', serif;
+    font-family: 'Carter One', cursive;
     }
 
     .containerbig{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:brown;
+    background-color: #aeaebd;
     }
     
     .container {
     width: 300px;
     height: 600px;
-    background-color: burlywood;
+    background-color: rgba(121,18,195,0.80);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    color: brown;
+    color: rgba(222,216,222,1);
     margin-top: 10px;
     margin-bottom: 10px;
     }
     
     button {
-    background-color: brown;
-    color: burlywood;
-    font-weight: bold;
+    background-color: rgba(239,35,188);
+    color: rgba(222,216,222,1);
     border-radius: 9px;
-    font-size: 13px;
-    font-family: 'Noto Serif TC', serif;  
+    font-size: 15px;
+    font-family: 'Noto Serif TC', serif;
+    border: 10px ridge rgba(222,216,222,1);
+    }
+
+    .container p{
+    font-size: 28px;
+    color: rgba(222,216,222,1);
+    margin-bottom: 10px;
     }
     
     .containerbig2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:brown;
+    background-image: url("img/fondo.jpg");
+    background-color: #aeaebd;
     }
     
+    .containerbig {
+    background-image: url("img/fondo.jpg");  
+    background-color: #aeaebd;
+    }
+
     #claves,#clave-enc,#clave-dec {
     display: none;
     }
@@ -50,4 +63,18 @@
     margin-bottom: 60px;
     padding-left: 15px;
     padding-right: 15px;
+    }
+
+    label {
+    font-size: 18px;
+    font-family: 'Zilla Slab', serif;
+    }
+    
+
+    #number {
+    width: 30px;
+    }
+
+    #encode-key,#decode-key,#saludo,#key2 {
+    font-family: 'Zilla Slab', serif;
     }

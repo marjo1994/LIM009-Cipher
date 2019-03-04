@@ -28,12 +28,12 @@
     }
     
     button {
-    background-color: rgb(236, 18, 178);
+    background-color: rgb(89, 10, 167);
     color: rgba(238,235,238,1);
     border-radius: 9px;
     font-size: 15px;
     font-family: 'Noto Serif TC', serif;
-    border: 5px outset rgba(238,235,238,1);
+    border: 5px outset rgb(227,231,13);
     }
 
     .container p{

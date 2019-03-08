@@ -28,6 +28,10 @@ describe('cipher', () => {
       const simb2= '$'+ "&'()%+,-./!" + '"#';
       assert.equal(cipher.encode(33,simb),simb2);
     });
+
+    it('debería retornar "LSPE QYRHS" para "HOLA MUNDO" con offset 30', ()=> {
+      assert.equal(cipher.encode(30,"HOLA MUNDO"),"LSPE QYRHS");
+    });
   
 });
 
@@ -53,6 +57,10 @@ describe('cipher', () => {
       const simb= '!' + '#$%&"()*+,-./';
       const simb2= '$'+ "&'()%+,-./!" + '"#';
       assert.equal(cipher.decode(33,simb2),simb);
+    });
+
+    it('debería retornar "HOLA MUNDO" para "LSPE QYRHS" con offset 30', ()=> {
+      assert.equal(cipher.encode(30,"LSPE QYRHS"),"HOLA MUNDO");
     });
 
   });

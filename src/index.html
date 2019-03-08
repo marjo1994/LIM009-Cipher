@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
@@ -8,7 +8,6 @@
   <body>
   <!--Sección inicio-->
     <div class="containerbig" id="inicio">
-    <div class="containerbig2">
       <div class="container">
         <h1 class="title">Asigna una clave segura a tu locker</h1>
         <form>
@@ -21,38 +20,31 @@
           <input id="number" type="number" min="1" step="1" placeholder="N° de desplazamientos">
         </form>
         <br>
-        <button id="btnS">Registrar</button>
+        <button id="btn-s">Registrar</button>
       </div>
-    </div>
     </div>
 <!--Sección Bienvenida-->
     <div class="containerbig" id="claves">
-      <div class="containerbig2">
-        <div class="container">
-          <h2 id="saludo"></h2>
-          <h1 id="key2"></h1>
-          <button id="btnEnc">Encriptar</button>
+       <div class="container">
+          <p id="saludo"></p>
+          <p id="key2"></p>
+          <button id="btn-enc">Encriptar</button>
         </div>
-      </div>
     </div>
 <!--Sección Clave encriptada-->
     <div class="containerbig" id="clave-enc">
-      <div class="containerbig2">
-        <div class="container">
-          <p>Abre tu locker</p>
-          <h1 id="encode-key"></h1>
-          <button id="btnDes">Descifrar</button>          
-        </div>
-      </div>
+       <div class="container">
+          <h1>Abre tu locker</h1>
+          <p id="encode-key"></p>
+          <button id="btn-des">Descifrar</button>          
+       </div>
     </div>
 <!--Sección Clave descifrada-->
     <div class="containerbig" id="clave-dec">
-      <div class="containerbig2">
-        <div class="container">
-          <p>No olvides cerrarlo</p>
-          <h1 id="decode-key"></h1>
-          <button id="btnRefresh">Volver al inicio</button>
-        </div>
+      <div class="container">
+          <h1>No olvides cerrarlo</h1>
+          <p id="decode-key"></p>
+          <button id="btn-refresh">Volver al inicio</button>
       </div>
     </div>
 

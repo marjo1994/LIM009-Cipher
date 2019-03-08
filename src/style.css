@@ -10,6 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url("img/fondo.jpg");  
     background-color: #aeaebd;
     }
     
@@ -27,34 +28,12 @@
     margin-bottom: 10px;
     }
     
-    button {
-    background-color: rgb(89, 10, 167);
-    color: rgba(238,235,238,1);
-    border-radius: 9px;
-    font-size: 15px;
-    font-family: 'Noto Serif TC', serif;
-    border: 5px outset rgb(227,231,13);
-    }
-
     .container p{
     font-size: 28px;
     color: rgba(238,235,238,1);
     margin-bottom: 10px;
     }
     
-    .containerbig2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url("img/fondo.jpg");
-    background-color: #aeaebd;
-    }
-    
-    .containerbig {
-    background-image: url("img/fondo.jpg");  
-    background-color: #aeaebd;
-    }
-
     #claves,#clave-enc,#clave-dec {
     display: none;
     }
@@ -70,11 +49,19 @@
     font-family: 'Zilla Slab', serif;
     }
     
-
     #number {
     width: 30px;
     }
 
     #encode-key,#decode-key,#saludo,#key2 {
     font-family: 'Zilla Slab', serif;
+    }
+
+    button {
+    background-color: rgb(89, 10, 167);
+    color: rgba(238,235,238,1);
+    border-radius: 9px;
+    font-size: 15px;
+    font-family: 'Noto Serif TC', serif;
+    border: 5px outset rgb(227,231,13);
     }

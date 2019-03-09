@@ -11,7 +11,7 @@ window.cipher = {
       } else if(48<=string.charCodeAt(i) && string.charCodeAt(i)<=57) {
         textenc += String.fromCharCode((string.charCodeAt(i)-48+offset)%10+48);
       } else if(32 === string.charCodeAt(i)) {
-        textenc += String.fromCharCode(32);
+        textenc += String.fromCharCode(string.charCodeAt(i));
       }
      } return textenc;
   },
@@ -27,7 +27,7 @@ window.cipher = {
       } else if(48<=string.charCodeAt(i) && string.charCodeAt(i)<=57) {
         textdec +=  String.fromCharCode((string.charCodeAt(i)-57-offset)%10+57);
       } else if(32 === string.charCodeAt(i)) {
-        textdec += String.fromCharCode(32);
+        textdec += String.fromCharCode(string.charCodeAt(i));
       }
     } return textdec;
   }

@@ -60,7 +60,7 @@ describe('cipher', () => {
     });
 
     it('debería retornar "HOLA MUNDO" para "LSPE QYRHS" con offset 30', ()=> {
-      assert.equal(cipher.encode(30,"LSPE QYRHS"),"HOLA MUNDO");
+      assert.equal(cipher.decode(30,"LSPE QYRHS"),"HOLA MUNDO");
     });
 
   });

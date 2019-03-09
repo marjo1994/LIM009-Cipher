@@ -11,7 +11,7 @@ El objetivo es mantener la seguridad de los bienes almacenados en el locker. Adq
 ## ¿Cómo crees que el producto que estás creando está resolviendo sus problemas?
 
 El usuario registra su usuario y clave que permite el ingreso de letras mayúsculas, minúsculas, números y algunos símbolos.
-![Registro](img/pantalla1.jpg)
+![Registro](img/pantalla1.jpg)s
 
 Por consiguiente, da la bienvenida al usuario y muestra la clave elegida.
 

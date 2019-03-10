@@ -32,7 +32,11 @@ describe('cipher', () => {
     it('debería retornar "LSPE QYRHS" para "HOLA MUNDO" con offset 30', ()=> {
       assert.equal(cipher.encode(30,"HOLA MUNDO"),"LSPE QYRHS");
     });
-  
+
+    it('debería retornar "Z" para "A" con offset -1', ()=> {
+      assert.equal(cipher.encode(-1,"A"),"Z");
+    });
+    
 });
 
   describe('cipher.decode', () => {
@@ -62,6 +66,11 @@ describe('cipher', () => {
     it('debería retornar "HOLA MUNDO" para "LSPE QYRHS" con offset 30', ()=> {
       assert.equal(cipher.decode(30,"LSPE QYRHS"),"HOLA MUNDO");
     });
+
+    it( 'debería retornar "B" para "A" con offset -1', ()=> {
+      assert.equal(cipher.decode(-1,"A"),"B");
+    });
+
 
   });
 
